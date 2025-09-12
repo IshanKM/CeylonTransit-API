@@ -13,7 +13,7 @@ app.get("/api/health", (req, res) => {
 
 // hello world endpoint
 app.get("/api/hello", (req, res) => {
-  res.send("Hello web api world , CeylonTransit API is running 🚍");
+  res.send("Hello web-api world , CeylonTransit API is running 🚍");
 });
 
 const PORT = process.env.PORT || 3000;
