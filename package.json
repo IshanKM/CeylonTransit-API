@@ -4,6 +4,8 @@
   "description": "Sri Lanka NTC Bus Tracking API Student Id : COBSCCOMPY4231P-021 Coventry ID : 14381780",
   "main": "index.js",
   "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,3 +31,4 @@
     "nodemon": "^3.1.10"
   }
 }
+
