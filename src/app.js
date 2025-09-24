@@ -11,6 +11,11 @@ app.use(cors());
 app.use(helmet());
 
 // routes
+
+app.get('/', (req, res) => {
+  res.send('CeylonTransit-API is running 🚀');
+});
+
 app.use("/api/test", TestRouter);
 
 app.get("/api/health", (req, res) => {
