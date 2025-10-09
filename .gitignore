@@ -4,6 +4,9 @@ node_modules/
 # Environment variables
 .env
 
+.DS_Store
+npm-debug.log
+
 # Logs
 npm-debug.log*
 yarn-debug.log*

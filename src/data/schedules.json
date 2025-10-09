@@ -1,0 +1,6 @@
+[
+  {"scheduleId":"SCH-001","routeId":"R001","busId":"BUS-001","startTime":"2025-10-01T08:00:00Z","endTime":"2025-10-01T13:00:00Z","direction":"forward"},
+  {"scheduleId":"SCH-002","routeId":"R001","busId":"BUS-002","startTime":"2025-10-01T09:00:00Z","endTime":"2025-10-01T14:00:00Z","direction":"forward"},
+  {"scheduleId":"SCH-003","routeId":"R002","busId":"BUS-003","startTime":"2025-10-01T07:30:00Z","endTime":"2025-10-01T11:30:00Z","direction":"forward"}
+ 
+]

@@ -1,20 +1,11 @@
 // src/services/BusService.js
 import Bus from '../models/Bus.js';
 
- class BusService {
-  static async create(data) {
-    const bus = new Bus(data);
-    return bus.save();
-  }
-  static async getById(id) {
-    return Bus.findById(id).lean();
-  }
-  static async getByBusId(busId) {
-    return Bus.findOne({ busId }).lean();
-  }
-  static async setCurrentTrip(busId, tripObjectId) {
-    return Bus.findByIdAndUpdate(busId, { currentTrip: tripObjectId }, { new: true });
-  }
+class BusService {
+  static findByBusId(busId) { return Bus.findOne({ busId }); }
+  static findById(id) { return Bus.findById(id); }
+  static create(data) { return Bus.create(data); }
+  static updateById(id, data) { return Bus.findByIdAndUpdate(id, data, { new: true }); }
+  static updateByBusId(busId, data) { return Bus.findOneAndUpdate({ busId }, data, { new: true }); }
 }
-
 export default BusService;

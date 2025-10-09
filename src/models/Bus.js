@@ -1,17 +1,13 @@
 // src/models/Bus.js
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
-const BusSchema = new mongoose.Schema({
-  busId: { type: String, required: true, unique: true },
-  registration: String,
-  operator: String,
-  capacity: Number,
-  currentTrip: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Trip",
-    default: null
-  }
+const busSchema = new mongoose.Schema({
+    name: String,
+    registration_number: { type: String, unique: true },
+    type: { type: String, enum: ['Express','Normal'], default: 'Normal' },
+    capacity: Number,
+    operator_name: String, // NTC or private
+    route_ids: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Route' }]
 }, { timestamps: true });
 
-// ✅ Correct default export
-export default mongoose.model("Bus", BusSchema);
+export default mongoose.model('Bus', busSchema);

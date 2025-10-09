@@ -1,20 +1,19 @@
 // src/models/Route.js
 import mongoose from 'mongoose';
 
-const StopSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  coordinates: { type: [Number], required: true } // [lng, lat]
-}, { _id: false });
+const stopSchema = new mongoose.Schema({
+    name: String,
+    lat: Number,
+    lng: Number,
+    distance_from_start: Number // km
+});
 
-const RouteSchema = new mongoose.Schema({
-  routeId: { type: String, required: true, unique: true }, // human-friendly id
-  name: { type: String, required: true },
-  stops: { type: [StopSchema], default: [] },
-  geometry: {
-    type: { type: String, enum: ['LineString'], default: 'LineString' },
-    coordinates: { type: [[Number]], default: [] } // [[lng,lat],...]
-  },
-  estimatedDuration: Number // minutes
+const routeSchema = new mongoose.Schema({
+    route_number: { type: String, unique: true },
+    start: String,
+    end: String,
+    stops: [stopSchema],
+    full_distance: Number
 }, { timestamps: true });
 
-export default mongoose.model('Route', RouteSchema);
+export default mongoose.model('Route', routeSchema);

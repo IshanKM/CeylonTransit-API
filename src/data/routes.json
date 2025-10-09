@@ -1,0 +1,60 @@
+[
+  {
+    "routeId": "R001",
+    "name": "Colombo - Matara",
+    "distanceKm": 160,
+    "averageSpeedKmph": 50,
+    "stops": [
+      { "stopId": "S001", "name": "Colombo Central", "coordinates": [79.8612, 6.9271], "distanceFromStartKm": 0 },
+      { "stopId": "S002", "name": "Kalutara", "coordinates": [79.9590, 6.5832], "distanceFromStartKm": 42 },
+      { "stopId": "S003", "name": "Galle", "coordinates": [80.2190, 6.0535], "distanceFromStartKm": 117 },
+      { "stopId": "S004", "name": "Weligama", "coordinates": [80.4164, 5.9723], "distanceFromStartKm": 142 },
+      { "stopId": "S005", "name": "Matara", "coordinates": [80.5469, 5.9493], "distanceFromStartKm": 160 }
+    ]
+  },
+  {
+    "routeId": "R002",
+    "name": "Colombo - Kandy",
+    "distanceKm": 115,
+    "averageSpeedKmph": 45,
+    "stops": [
+      { "stopId": "S101", "name": "Colombo Fort", "coordinates": [79.8612, 6.9271], "distanceFromStartKm": 0 },
+      { "stopId": "S102", "name": "Pettah", "coordinates": [79.8620, 6.9340], "distanceFromStartKm": 2 },
+      { "stopId": "S103", "name": "Peradeniya", "coordinates": [80.5900, 7.2600], "distanceFromStartKm": 95 },
+      { "stopId": "S104", "name": "Kandy", "coordinates": [80.6337, 7.2906], "distanceFromStartKm": 100 }
+    ]
+  },
+  {
+    "routeId": "R003",
+    "name": "Colombo - Jaffna",
+    "distanceKm": 400,
+    "averageSpeedKmph": 60,
+    "stops": [
+      { "stopId": "S201", "name": "Colombo Fort", "coordinates": [79.8612, 6.9271], "distanceFromStartKm": 0 },
+      { "stopId": "S202", "name": "Anuradhapura", "coordinates": [80.3950, 8.3114], "distanceFromStartKm": 210 },
+      { "stopId": "S203", "name": "Jaffna", "coordinates": [80.0255, 9.6615], "distanceFromStartKm": 400 }
+    ]
+  },
+  {
+    "routeId": "R004",
+    "name": "Colombo - Trincomalee",
+    "distanceKm": 250,
+    "averageSpeedKmph": 55,
+    "stops": [
+      { "stopId": "S301", "name": "Colombo Fort", "coordinates": [79.8612, 6.9271], "distanceFromStartKm": 0 },
+      { "stopId": "S302", "name": "Polonnaruwa", "coordinates": [81.0000, 7.9410], "distanceFromStartKm": 130 },
+      { "stopId": "S303", "name": "Trincomalee", "coordinates": [81.2340, 8.5876], "distanceFromStartKm": 250 }
+    ]
+  },
+  {
+    "routeId": "R005",
+    "name": "Colombo - Badulla",
+    "distanceKm": 200,
+    "averageSpeedKmph": 45,
+    "stops": [
+      { "stopId": "S401", "name": "Colombo Fort", "coordinates": [79.8612, 6.9271], "distanceFromStartKm": 0 },
+      { "stopId": "S402", "name": "Nuwara Eliya", "coordinates": [80.7660, 6.9680], "distanceFromStartKm": 110 },
+      { "stopId": "S403", "name": "Badulla", "coordinates": [81.0640, 6.9900], "distanceFromStartKm": 200 }
+    ]
+  }
+]
